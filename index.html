@@ -206,11 +206,7 @@
 				<p>GitHub: <a href="https://github.com/N7z">github.com/N7z</a></p>
 				<p>
 					Discord:
-					<a
-						href="#"
-						onclick="navigator.clipboard.writeText('zpaulin'); alert('Copiado: zpaulin'); return false;"
-						>zpaulin <i class="fas fa-copy"></i
-					></a>
+					<a href="#" id="copyLink"> zpaulin <i class="fas fa-copy"></i> </a>
 				</p>
 			</section>
 		</main>
@@ -223,6 +219,29 @@
 				setTimeout(() => preloader.classList.add("fade-out"), 300);
 				setTimeout(() => preloader.remove(), 2000);
 			});
+			document
+				.getElementById("copyLink")
+				.addEventListener("click", function (e) {
+					e.preventDefault();
+
+					const text = "zpaulin";
+					const input = document.createElement("input");
+					input.value = text;
+					document.body.appendChild(input);
+					input.select();
+					input.setSelectionRange(0, 99999);
+
+					try {
+						const successful = document.execCommand("copy");
+						if (successful) {
+							alert("Copiado com sucesso.");
+						}
+					} catch (err) {
+						alert("Erro ao copiar");
+					}
+
+					document.body.removeChild(input);
+				});
 		</script>
 	</body>
 </html>
