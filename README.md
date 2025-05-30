@@ -2,6 +2,8 @@
 
 Currículo online simples, responsivo e direto ao ponto, desenvolvido com HTML5 e CSS3.
 
+![Preview](https://github.com/user-attachments/assets/d3a07da0-2135-4bb0-862a-40dcbf719bf7)
+
 ---
 
 ## 📄 Descrição
