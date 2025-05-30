@@ -17,7 +17,8 @@
                 el.textContent = "−";
             } else {
                 extraTech.style.display = "none";
-                el.textContent = "+3";
+                const count = extraTech.querySelectorAll('.badge').length;
+                el.textContent = `+${count}`;
             }
         }
     </script>
@@ -65,6 +66,7 @@
             <span class="badge badge-livewire">Livewire</span>
             <span class="badge badge-sqlite">SQLite</span>
             <span class="badge badge-mysql">MySQL</span>
+            <span class="badge badge-fontawesome">Font Awesome</span>
         </div>
     </section>
     <section id="projetos">
@@ -74,7 +76,7 @@
                 Task List
                 <span class="badge badge-laravel">Laravel</span>
                 <span class="badge badge-php">PHP</span>
-                <span class="badge badge-expand" onclick="toggleTech(this)">+4</span>
+                <span class="badge badge-expand" onclick="toggleTech(this)">+5</span>
             </h3>
             <div class="extra-tech" style="display:none; margin-top: 4px;">
                 <span class="badge badge-node">Node.js</span>
@@ -117,7 +119,11 @@
                 Meu Currículo
                 <span class="badge badge-html">HTML5</span>
                 <span class="badge badge-css">CSS3</span>
+                <span class="badge badge-expand" onclick="toggleTech(this)">+1</span>
             </h3>
+            <div class="extra-tech" style="display:none; margin-top: 4px;">
+                <span class="badge badge-fontawesome">Font Awesome</span>
+            </div>
             <p>Site pessoal em HTML e CSS com objetivo de apresentar meu currículo de forma moderna e acessível. Estrutura simples, responsiva e com foco em organização de informações profissionais, contato e projetos. Ideal como cartão de visitas digital.</p>
             <div class="tooltip-container">
                 <a class="button" target="_blank" href="https://github.com/N7z/online-resume">
