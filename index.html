@@ -1,167 +1,228 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Paulo Junior</title>
-    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./badges.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Paulo Junior</title>
+		<link rel="icon" href="./favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="./badges.css" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+		/>
 
-    <script>
-        function toggleTech(el) {
-            const extraTech = el.parentElement.nextElementSibling;
-            if (extraTech.style.display === "none") {
-                extraTech.style.display = "inline-flex";
-                el.textContent = "−";
-            } else {
-                extraTech.style.display = "none";
-                const count = extraTech.querySelectorAll('.badge').length;
-                el.textContent = `+${count}`;
-            }
-        }
-    </script>
-</head>
-<body>
-<div id="preloader">CARREGANDO</div>
-<nav>
-    <a href="#sobre"><i class="fas fa-user"></i> Sobre</a>
-    <a href="#tecnologias"><i class="fas fa-code"></i> Tecnologias</a>
-    <a href="#projetos"><i class="fas fa-project-diagram"></i> Projetos</a>
-    <a href="#cursos"><i class="fas fa-graduation-cap"></i> Cursos</a>
-    <a href="#educacao"><i class="fas fa-school"></i> Educação</a>
-    <a href="#contato"><i class="fas fa-envelope"></i> Contato</a>
-</nav>
-<header>
-    <img src="./minha_foto.jpg" alt="Foto do Paulo" class="profile-photo" />
-    <h1>Paulo A. J. Rodrigues Junior</h1>
-    <p>
-        <span><i class="fas fa-code"></i> Desenvolvedor Web Full Stack</span>
-        <span><i class="fas fa-calendar ms"></i> 17/09/2008</span>
-        <span><i class="fas fa-map-pin ms"></i> Nova Prata - RS</span>
-    </p>
-</header>
-<main>
-    <section id="sobre">
-        <h2>Sobre mim</h2>
-        <p>Sou um desenvolvedor web com foco em aplicações modernas e performáticas. Tenho experiência prática com PHP, Laravel, Node.js e front-end moderno. Gosto de resolver problemas com código limpo, lógica direta e interfaces objetivas. Busco sempre aprender rápido e entregar resultado.</p>
-    </section>
-    <section id="tecnologias">
-        <h2>Tecnologias</h2>
-        <div class="tech">
-            <span class="badge badge-html">HTML5</span>
-            <span class="badge badge-css">CSS3</span>
-            <span class="badge badge-js">JavaScript</span>
-            <span class="badge badge-php">PHP</span>
-            <span class="badge badge-laravel">Laravel</span>
-            <span class="badge badge-node">Node.js</span>
-            <span class="badge badge-docker">Docker</span>
-            <span class="badge badge-git">Git / GitHub</span>
-            <span class="badge badge-composer">Composer</span>
-            <span class="badge badge-gcp">Google Cloud</span>
-            <span class="badge badge-tailwind">Tailwind</span>
-            <span class="badge badge-bootstrap">Bootstrap</span>
-            <span class="badge badge-jquery">jQuery</span>
-            <span class="badge badge-ajax">AJAX</span>
-            <span class="badge badge-livewire">Livewire</span>
-            <span class="badge badge-sqlite">SQLite</span>
-            <span class="badge badge-mysql">MySQL</span>
-            <span class="badge badge-fontawesome">Font Awesome</span>
-        </div>
-    </section>
-    <section id="projetos">
-        <h2>Projetos</h2>
-        <div class="project">
-            <h3>
-                Task List
-                <span class="badge badge-laravel">Laravel</span>
-                <span class="badge badge-php">PHP</span>
-                <span class="badge badge-expand" onclick="toggleTech(this)">+5</span>
-            </h3>
-            <div class="extra-tech" style="display:none; margin-top: 4px;">
-                <span class="badge badge-node">Node.js</span>
-                <span class="badge badge-tailwind">Tailwind</span>
-                <span class="badge badge-ajax">AJAX</span>
-                <span class="badge badge-livewire">Livewire</span>
-                <span class="badge badge-sqlite">SQLite</span>
-            </div>
-            <p>Aplicação web para gerenciamento de tarefas com funcionalidades de criação, edição, conclusão e exclusão. Desenvolvida com Laravel e Livewire, com foco em interatividade sem recarregamento de página e interface limpa. Ideal para estudos de CRUD e componentização no Laravel moderno.</p>
-            <div class="tooltip-container">
-                <a class="button" target="_blank" href="https://github.com/N7z/task-list">
-                    <i class="fab fa-github"></i> Ver no GitHub
-                </a>
-                <span class="tooltip-text">https://github.com/N7z/task-list</span>
-            </div>
-        </div>
-        <div class="project">
-            <h3>
-                Blog Pessoal
-                <span class="badge badge-laravel">Laravel</span>
-                <span class="badge badge-php">PHP</span>
-                <span class="badge badge-expand" onclick="toggleTech(this)">+4</span>
-            </h3>
-            <div class="extra-tech" style="display:none; margin-top: 4px;">
-                <span class="badge badge-node">Node.js</span>
-                <span class="badge badge-bootstrap">Bootstrap</span>
-                <span class="badge badge-ajax">AJAX</span>
-                <span class="badge badge-mysql">MySQL</span>
-            </div>
-            <p>Plataforma básica de blog com painel administrativo para criação e edição de posts, sistema de categorias e layout responsivo. Criado com Laravel para o backend e Blade no front-end. Ótimo exemplo de estrutura MVC e boas práticas em projetos PHP.</p>
-            <div class="tooltip-container">
-                <a class="button" target="_blank" href="https://github.com/N7z/personal-blog">
-                    <i class="fab fa-github"></i> Ver no GitHub
-                </a>
-                <span class="tooltip-text">https://github.com/N7z/personal-blog</span>
-            </div>
-        </div>
-        <div class="project">
-            <h3>
-                Meu Currículo
-                <span class="badge badge-html">HTML5</span>
-                <span class="badge badge-css">CSS3</span>
-                <span class="badge badge-expand" onclick="toggleTech(this)">+1</span>
-            </h3>
-            <div class="extra-tech" style="display:none; margin-top: 4px;">
-                <span class="badge badge-fontawesome">Font Awesome</span>
-            </div>
-            <p>Site pessoal em HTML e CSS com objetivo de apresentar meu currículo de forma moderna e acessível. Estrutura simples, responsiva e com foco em organização de informações profissionais, contato e projetos. Ideal como cartão de visitas digital.</p>
-            <div class="tooltip-container">
-                <a class="button" target="_blank" href="https://github.com/N7z/online-resume">
-                    <i class="fab fa-github"></i> Ver no GitHub
-                </a>
-                <span class="tooltip-text">https://github.com/N7z/online-resume</span>
-            </div>
-        </div>
-    </section>
-    <section id="cursos">
-        <h2>Cursos</h2>
-        <ul>
-            <li>PHP 7 Completo — Udemy (73.5h)</li>
-        </ul>
-    </section>
-    <section id="educacao">
-        <h2>Educação</h2>
-        <ul>
-            <li>Ensino Fundamental Completo — E.E.E.F Reinaldo Cherubini (2015 - 2022)</li>
-            <li>Ensino Médio — Cursando atualmente no Colégio Tiradentes (2023 - Presente)</li>
-        </ul>
-    </section>
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Email: <a href="mailto:pj@paulodev.space">pj@paulodev.space</a></p>
-        <p>GitHub: <a href="https://github.com/N7z">github.com/N7z</a></p>
-    </section>
-</main>
-<footer>
-    <p>&copy; 2025 Paulo Junior. Todos os direitos reservados.</p>
-</footer>
-<script>
-    window.addEventListener("load", () => {
-        const preloader = document.getElementById("preloader")
-        setTimeout(() =>  preloader.classList.add("fade-out"), 300)
-        setTimeout(() => preloader.remove(), 2000)
-    })
-</script>
-</body>
+		<script>
+			function toggleTech(el) {
+				const extraTech = el.parentElement.nextElementSibling;
+				if (extraTech.style.display === "none") {
+					extraTech.style.display = "inline-flex";
+					el.textContent = "−";
+				} else {
+					extraTech.style.display = "none";
+					const count = extraTech.querySelectorAll(".badge").length;
+					el.textContent = `+${count}`;
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="preloader">CARREGANDO</div>
+		<nav>
+			<a href="#sobre"><i class="fas fa-user"></i> Sobre</a>
+			<a href="#tecnologias"><i class="fas fa-code"></i> Tecnologias</a>
+			<a href="#projetos"><i class="fas fa-project-diagram"></i> Projetos</a>
+			<a href="#cursos"><i class="fas fa-graduation-cap"></i> Cursos</a>
+			<a href="#educacao"><i class="fas fa-school"></i> Educação</a>
+			<a href="#contato"><i class="fas fa-envelope"></i> Contato</a>
+		</nav>
+		<header>
+			<img src="./minha_foto.jpg" alt="Foto do Paulo" class="profile-photo" />
+			<h1>Paulo A. J. Rodrigues Junior</h1>
+			<p>
+				<span><i class="fas fa-code"></i> Desenvolvedor Web Full Stack</span>
+				<span><i class="fas fa-calendar ms"></i> 17/09/2008</span>
+				<span><i class="fas fa-map-pin ms"></i> Nova Prata - RS</span>
+			</p>
+		</header>
+		<main>
+			<section id="sobre">
+				<h2>Sobre mim</h2>
+				<p>
+					Sou um desenvolvedor web com foco em aplicações modernas e
+					performáticas. Tenho experiência prática com PHP, Laravel, Node.js e
+					front-end moderno. Gosto de resolver problemas com código limpo,
+					lógica direta e interfaces objetivas. Busco sempre aprender rápido e
+					entregar resultado.
+				</p>
+			</section>
+			<section id="tecnologias">
+				<h2>Tecnologias</h2>
+				<div class="tech">
+					<span class="badge badge-html">HTML5</span>
+					<span class="badge badge-css">CSS3</span>
+					<span class="badge badge-js">JavaScript</span>
+					<span class="badge badge-php">PHP</span>
+					<span class="badge badge-laravel">Laravel</span>
+					<span class="badge badge-node">Node.js</span>
+					<span class="badge badge-docker">Docker</span>
+					<span class="badge badge-git">Git / GitHub</span>
+					<span class="badge badge-composer">Composer</span>
+					<span class="badge badge-gcp">Google Cloud</span>
+					<span class="badge badge-tailwind">Tailwind</span>
+					<span class="badge badge-bootstrap">Bootstrap</span>
+					<span class="badge badge-jquery">jQuery</span>
+					<span class="badge badge-ajax">AJAX</span>
+					<span class="badge badge-livewire">Livewire</span>
+					<span class="badge badge-sqlite">SQLite</span>
+					<span class="badge badge-mysql">MySQL</span>
+					<span class="badge badge-fontawesome">Font Awesome</span>
+				</div>
+			</section>
+			<section id="projetos">
+				<h2>Projetos</h2>
+				<div class="project">
+					<h3>
+						Task List
+						<span class="badge badge-laravel">Laravel</span>
+						<span class="badge badge-php">PHP</span>
+						<span class="badge badge-expand" onclick="toggleTech(this)"
+							>+5</span
+						>
+					</h3>
+					<div class="extra-tech" style="display: none; margin-top: 4px">
+						<span class="badge badge-node">Node.js</span>
+						<span class="badge badge-tailwind">Tailwind</span>
+						<span class="badge badge-ajax">AJAX</span>
+						<span class="badge badge-livewire">Livewire</span>
+						<span class="badge badge-sqlite">SQLite</span>
+					</div>
+					<p>
+						Aplicação web para gerenciamento de tarefas com funcionalidades de
+						criação, edição, conclusão e exclusão. Desenvolvida com Laravel e
+						Livewire, com foco em interatividade sem recarregamento de página e
+						interface limpa. Ideal para estudos de CRUD e componentização no
+						Laravel moderno.
+					</p>
+					<div class="tooltip-container">
+						<a
+							class="button"
+							target="_blank"
+							href="https://github.com/N7z/task-list"
+						>
+							<i class="fab fa-github"></i> Ver no GitHub
+						</a>
+						<span class="tooltip-text">https://github.com/N7z/task-list</span>
+					</div>
+				</div>
+				<div class="project">
+					<h3>
+						Blog Pessoal
+						<span class="badge badge-laravel">Laravel</span>
+						<span class="badge badge-php">PHP</span>
+						<span class="badge badge-expand" onclick="toggleTech(this)"
+							>+4</span
+						>
+					</h3>
+					<div class="extra-tech" style="display: none; margin-top: 4px">
+						<span class="badge badge-node">Node.js</span>
+						<span class="badge badge-bootstrap">Bootstrap</span>
+						<span class="badge badge-ajax">AJAX</span>
+						<span class="badge badge-mysql">MySQL</span>
+					</div>
+					<p>
+						Plataforma básica de blog com painel administrativo para criação e
+						edição de posts, sistema de categorias e layout responsivo. Criado
+						com Laravel para o backend e Blade no front-end. Ótimo exemplo de
+						estrutura MVC e boas práticas em projetos PHP.
+					</p>
+					<div class="tooltip-container">
+						<a
+							class="button"
+							target="_blank"
+							href="https://github.com/N7z/personal-blog"
+						>
+							<i class="fab fa-github"></i> Ver no GitHub
+						</a>
+						<span class="tooltip-text"
+							>https://github.com/N7z/personal-blog</span
+						>
+					</div>
+				</div>
+				<div class="project">
+					<h3>
+						Meu Currículo
+						<span class="badge badge-html">HTML5</span>
+						<span class="badge badge-css">CSS3</span>
+						<span class="badge badge-expand" onclick="toggleTech(this)"
+							>+1</span
+						>
+					</h3>
+					<div class="extra-tech" style="display: none; margin-top: 4px">
+						<span class="badge badge-fontawesome">Font Awesome</span>
+					</div>
+					<p>
+						Site pessoal em HTML e CSS com objetivo de apresentar meu currículo
+						de forma moderna e acessível. Estrutura simples, responsiva e com
+						foco em organização de informações profissionais, contato e
+						projetos. Ideal como cartão de visitas digital.
+					</p>
+					<div class="tooltip-container">
+						<a
+							class="button"
+							target="_blank"
+							href="https://github.com/N7z/online-resume"
+						>
+							<i class="fab fa-github"></i> Ver no GitHub
+						</a>
+						<span class="tooltip-text"
+							>https://github.com/N7z/online-resume</span
+						>
+					</div>
+				</div>
+			</section>
+			<section id="cursos">
+				<h2>Cursos</h2>
+				<ul>
+					<li>PHP 7 Completo — Udemy (73.5h)</li>
+				</ul>
+			</section>
+			<section id="educacao">
+				<h2>Educação</h2>
+				<ul>
+					<li>
+						Ensino Fundamental Completo — E.E.E.F Reinaldo Cherubini (2015 -
+						2022)
+					</li>
+					<li>
+						Ensino Médio — Cursando atualmente no Colégio Tiradentes (2023 -
+						Presente)
+					</li>
+				</ul>
+			</section>
+			<section id="contato">
+				<h2>Contato</h2>
+				<p>Email: <a href="mailto:pj@paulodev.space">pj@paulodev.space</a></p>
+				<p>GitHub: <a href="https://github.com/N7z">github.com/N7z</a></p>
+				<p>
+					Discord:
+					<a
+						href="#"
+						onclick="navigator.clipboard.writeText('zpaulin'); alert('Copiado: zpaulin'); return false;"
+						>zpaulin <i class="fas fa-copy"></i
+					></a>
+				</p>
+			</section>
+		</main>
+		<footer>
+			<p>&copy; 2025 Paulo Junior. Todos os direitos reservados.</p>
+		</footer>
+		<script>
+			window.addEventListener("load", () => {
+				const preloader = document.getElementById("preloader");
+				setTimeout(() => preloader.classList.add("fade-out"), 300);
+				setTimeout(() => preloader.remove(), 2000);
+			});
+		</script>
+	</body>
 </html>
